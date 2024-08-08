@@ -1,10 +1,8 @@
-from fake_data.code import wow
+from fake_data.code import main_code
 
 
-def main() -> int:
+def fake_data() -> int:
     print("Running Code")
-    z = wow()
+    z = main_code()
     print(z)
-    print("Hello from fake-data!")
-    print("good")
     return 0

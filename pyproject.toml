@@ -5,12 +5,16 @@ description = "Add your description here"
 authors = [
     { name = "Chad Upjohn", email = "chad.upjohn@pinnsg.com" }
 ]
-dependencies = []
+dependencies = [
+    "langchain~=0.2.12",
+    "langchain-experimental~=0.0.64",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
-"fake-data" = "fake_data:main"
+# `rye run fake-data`
+"fake-data" = "fake_data:fake_data"
 
 [build-system]
 requires = ["hatchling"]
@@ -23,7 +27,6 @@ dev-dependencies = []
 [tool.rye.scripts]
 fmt = "rye fmt"
 lint = "rye lint --fix"
-code = "fake-data"
 all = { chain = ["fmt", "lint"] }
 
 [tool.hatch.metadata]

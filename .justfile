@@ -6,3 +6,4 @@ rye-sync:
 
 pre-commit:
     pre-commit install
+
