@@ -1,6 +1,3 @@
-from pprint import pprint
-
-import click
 from langchain_community.llms import Ollama
 from langchain_community.utilities.sql_database import SQLDatabase
 from langchain_core.output_parsers.json import JsonOutputParser
