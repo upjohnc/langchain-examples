@@ -8,13 +8,18 @@ authors = [
 dependencies = [
     "langchain~=0.2.12",
     "langchain-experimental~=0.0.64",
+    "langsmith~=0.1.98",
+    "beautifulsoup4~=4.12.3",
+    "langchain-community~=0.2.11",
+    "click~=8.1.7",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [project.scripts]
 # `rye run fake-data`
-"fake-data" = "fake_data:fake_data"
+"fake-data" = "fake_data:main"
+"database" = "database:main"
 
 [build-system]
 requires = ["hatchling"]
